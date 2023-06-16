@@ -4,11 +4,12 @@ import tests.Tester;
 
 public class Main {
     public static void main(String[] args) {
-        Tester adapterPatternTest = new AdapterTest();
-        adapterPatternTest.test();
+        Test.test(new AdapterTest());
         System.out.println();
-        Tester bridgePatternTest = new BridgePatternTest();
-        bridgePatternTest.test();
+
+        Test.test(new BridgePatternTest());
         System.out.println();
+
+
     }
 }
